@@ -68,32 +68,18 @@ body {
     align-content: center;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
 .icon {
-    max-width: 75%;
-    max-height: 75%;
-    border: #353535;
-    border-radius: 5%;
-    border-width: 16px;
+    width: 200px;
+    height: 200px;
 }
 
 .name_display {
-    display: inline;
-    background: linear-gradient(90deg, rgba(255,8,164,1) 0%, rgba(175,0,246,1) 100%);
-    background-clip: border-box;
-    background-clip: text;
-    color: transparent;
-    text-align: right;
-    font-size: 6vw;
-    font-weight: 500;
-    margin: auto;
-    width: 100%;
-    max-height: 100%;
+    background: linear-gradient(90deg, rgba(255,8,164,1) 0%, rgba(175,0,246,1) 100%) !important;
+    background-clip: border-box !important;
+    background-clip: text !important;
+    color: transparent !important;
+    font-weight: 500 !important;
+    word-spacing: -20px !important;
   }
 
   .name_subheader {
