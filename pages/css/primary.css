@@ -1,16 +1,9 @@
-* {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-    background-color: rgb(255, 140, 0);
-}
-
 .header{
+    display: flex;
     overflow: hidden;
     background-color: #9a24e3;
-    
+    border-radius: 10px;
+    margin: auto;
 }
 
 /* Style the topnav links */
@@ -21,5 +14,63 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
 
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+}
+
+/* Container for flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+}
+  
+.column {
+    display: flex;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+
+.align_right {
+    justify-content: right;
+    align-content: center;
+}
+
+.align_left {
+    justify-content: left;
+    align-content: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.name_display {
+    display: inline;
+    background: linear-gradient(90deg, rgba(255,8,164,1) 0%, rgba(175,0,246,1) 100%);
+    background-clip: border-box;
+    background-clip: text;
+    color: transparent;
+    text-align: right;
+    font-size: 5vw;
+    margin: auto;
+    width: 100%;
+    max-height: 100%;
+  }
