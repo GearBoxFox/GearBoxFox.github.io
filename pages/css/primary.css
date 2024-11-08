@@ -8,11 +8,6 @@
     box-sizing: border-box;
   }
 
-/* body {
-    background: linear-gradient(180deg, rgb(218, 155, 255) 0%, rgba(175,0,246,1) 100%) no-repeat center fixed;
-    background-size: auto;
-} */
-
 .header{
     display: flex;
     overflow: hidden;
