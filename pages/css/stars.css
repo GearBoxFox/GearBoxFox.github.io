@@ -1,0 +1,41 @@
+:root {
+    --grey: rgba(20, 20, 25, 1);
+    --stars: rgba(255, 255, 255, 1);
+  }
+  
+  /* * {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    color: var(--white);
+    background-color: rgba(255, 0, 0, 0);
+  } */
+  
+  body {
+    background-color: var(--grey) !important;
+    width: 100% !important;
+    min-height: 100vh !important;
+  }
+  
+  /* --- Star Background ------------------------------------------------ */
+  
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.1;
+    }
+  }
+  
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.35) !important;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: -1;
+  }

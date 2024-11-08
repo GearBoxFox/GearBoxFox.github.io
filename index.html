@@ -4,6 +4,9 @@
     <head>
         <!-- local stylesheet -->
         <link href="./pages/css/primary.css" rel="stylesheet">
+        <link href="./pages/css/stars.css" rel="stylesheet">
+
+        <script src="./pages/js/stars.js"></script>
 
         <!--bootstrap stylesheet-->
         <!-- Latest compiled and minified CSS -->
@@ -22,22 +25,59 @@
 
     <body>
       <div class="container-fluid">
+        <!--center all content with left+right padding-->
         <div class="row pt-5">
           <div class="col-10 mx-auto">
+            <!--top part with icon and about me-->
             <div class="row row-cols-2 align-items-center">
               <div class="col justify-content-end z-3 position-relative overflow-visible">
                 
-                <p class="display-1 name_display  overflow-visible">Rowan Foxx</p>
+                <p class="display-1 name_display bg-left overflow-visible">Rowan Foxx</p>
                 
-                <hr class="align-items-end border">
+                <hr class="align-items-end bg">
 
-                <p  class="h2">Tech Enthusiast, Robotics Engineer, and Satisfactory Nerd.</p>
+                <p  class="h2 name_subheader">Tech Enthusiast, Robotics Engineer, and Satisfactory Nerd.</p>
                 
               </div>
               <div class="col position-relative z-0">
-                <img src="./assets/icon.gif" class="img-thumbnail img-fluid h-25 float-left rounded">
+                <img src="./assets/icon.gif" class="img-thumbnail img-fluid h-25 float-left rounded bg-right">
               </div>
             </div>
+            <!--about me + projects-->
+            <div class="row align-items-center pt-5">
+              <div col-10>
+                <div class="card-group border-center">
+                  <!--card 1-->
+                  <div class="card card-transparent">
+                    <div class="card-body">
+                      <h3 class="card-title mx-auto">About Me</h3>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                  <!--card 2-->
+                  <div class="card card-transparent">
+                    <div class="card-body">
+                      <h3 class="card-title mx-auto">Interests</h3>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+                  <!--card 3-->
+                  <div class="card card-transparent">
+                    <div class="card-body">
+                      <h3 class="card-title mx-auto">My Links</h3>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--license for star-->
+        <div class="row pt-5">
+          <div class="col-auto mx-auto">
+            <a href="https://codepen.io/ethancopping/pen/mdaxdEj" class="mx-auto link-light link-opacity-100">Star Background Effect</a>
           </div>
         </div>
       </div>

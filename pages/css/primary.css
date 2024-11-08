@@ -1,11 +1,17 @@
+:root {
+    --bg-color-right: linear-gradient(-90deg, rgba(255,8,164,1) 0%, rgba(175,0,246,1) 100%);
+    --bg-color-left: linear-gradient(90deg, rgba(255,8,164,1) 0%, rgba(175,0,246,1) 100%);
+    --bg-color-center: linear-gradient(90deg, rgba(255,8,164,1) 0%, rgba(175,0,246,1) 50%, rgba(255,8,164,1) 100%);
+}
+
 * {
     box-sizing: border-box;
   }
 
-body {
+/* body {
     background: linear-gradient(180deg, rgb(218, 155, 255) 0%, rgba(175,0,246,1) 100%) no-repeat center fixed;
     background-size: auto;
-}
+} */
 
 .header{
     display: flex;
@@ -58,23 +64,34 @@ body {
     padding: 10px;
 }
 
-.align_right {
-    justify-content: right;
-    align-content: center;
+.border-right {
+    border-color: var(--bg-color-right) !important;
+    color: var(--bg-color-right) !important;
 }
 
-.align_left {
-    justify-content: left;
-    align-content: center;
+.border-left {
+    border: inherit inherit var(--bg-color-left) !important;
+    color: var(--bg-color-left) !important;
 }
 
-.icon {
-    width: 200px;
-    height: 200px;
+.border-center {
+    border: 10px inherit var(--bg-color-center) !important;
+    color: var(--bg-color-center) !important;
+}
+
+.bg-right {
+    border: var(--bg-color-right) !important;
+    background: var(--bg-color-right) !important;
+    color: var(--bg-color-right) !important;
+}
+
+.bg-left {
+    border: var(--bg-color-left) !important;
+    background: var(--bg-color-left) !important;
+    color: var(--bg-color-left) !important;
 }
 
 .name_display {
-    background: linear-gradient(90deg, rgba(255,8,164,1) 0%, rgba(175,0,246,1) 100%) !important;
     background-clip: border-box !important;
     background-clip: text !important;
     color: transparent !important;
@@ -84,11 +101,28 @@ body {
 
   .name_subheader {
     display: inline;
-    color: rgb(211, 211, 211);
+    color: rgb(211, 211, 211) !important;
     text-align: right;
     font-size: 3vw;
     font-weight: 500;
     margin: auto;
     width: 100%;
     max-height: 100%;
+  }
+
+  .card-transparent {
+    background: transparent !important;
+    border: 5px solid rgb(211, 211, 211) !important;
+    color: rgb(211, 211, 211) !important;
+  }
+
+  .list-element-left {
+    background: inherit;
+    border-width: inherit;
+    position: relative;
+    display: block;
+    padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
+    background-color: transparent;
+    border: var(--bg-color-left) !important;
+    border-width: 10px;
   }
