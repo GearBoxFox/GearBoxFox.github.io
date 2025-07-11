@@ -1,0 +1,80 @@
+$border-color-light: #9c59d1;
+$border-color-dark: #8253d1;
+$bg-gradient-left: linear-gradient(
+    -90deg,
+    $border-color-light 0%,
+    $border-color-dark 100%
+);
+$bg-light: #eeeeee44;
+
+* {
+    box-sizing: border-box;
+}
+
+.center-column {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.kimWrapper {
+    --gutter-left: calc(var(--grid-gutter) + env(safe-area-inset-left));
+    --gutter-right: calc(var(--grid-gutter) + env(safe-area-inset-right));
+    container-name: width-container;
+    container-type: inline-size;
+    display: block;
+    margin-inline: auto;
+    max-inline-size: var(--grid-max-width);
+    padding-inline-end: var(--gutter-right);
+    padding-inline-start: var(--gutter-left);
+}
+
+.footer-inner {
+    background-color: $bg-light;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.grid-column {
+    container-name: grid-column;
+    container-type: inline-size;
+    padding-inline: var(--grid-gutter-half);
+}
+
+.grid-column-full {
+    inline-size: 100%;
+}
+
+.grid-column-half {
+    inline-size: 50%;
+}
+
+.grid-column-oneThird {
+    inline-size: 33%;
+}
+
+.grid-column-twoThirds {
+    inline-size: 66%;
+}
+
+.content-box-border {
+    border: var(--border-regular) solid $border-color-light;
+    background-color: $bg-light;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
